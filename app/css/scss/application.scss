@@ -1,8 +1,6 @@
-*, *:before, *:after {
-  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-
+@import "reset";
 @import "animations";
+
 
 .fullscreen {
   position:absolute;
@@ -19,21 +17,44 @@
 }
 
 
+$choice-img-border: 3px;
+$choice-circle-radius: 40px;
+
+
 .img-choice-container {
   display: -webkit-flex;
   display: flex;
 
   .img-choice {
+    position: relative;
     background-color: #ff0000;
     background-size: cover;
     background-position: center;
     height: 300px;
     flex-grow: 1;
     display: inline-block;
-    border-right: 3px solid #fff;
-    border-left:  3px solid #fff;
-    &:first-child  { border-left: none }
+    border-right: $choice-img-border solid #fff;
+    border-left:  $choice-img-border solid #fff;
+    &:first-child { border-left: none; }
     &:last-child  { border-right: none; }
+
+    &:before {
+      :first-child:& { display: none; }
+      position: absolute;
+      left: -$choice-circle-radius;
+      top: 50%;
+      content: "OR";
+      z-index: 999;
+      height: $choice-circle-radius*2;
+      width: $choice-circle-radius*2;
+      background-color: #fff;
+      margin-top: -$choice-circle-radius;
+      line-height: $choice-circle-radius*2;
+      font-size: 30px;
+      position: absolute;
+      border-radius: 50%;
+      text-align: center;
+    }
   }
 }
 

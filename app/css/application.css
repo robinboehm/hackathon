@@ -58,6 +58,7 @@
   display: -webkit-flex;
   display: flex; }
   .img-choice-container .img-choice {
+    position: relative;
     background-color: #ff0000;
     background-size: cover;
     background-position: center;
@@ -70,3 +71,21 @@
       border-left: none; }
     .img-choice-container .img-choice:last-child {
       border-right: none; }
+    .img-choice-container .img-choice:first-child:before {
+      display: none; }
+    .img-choice-container .img-choice:before {
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      content: "OR";
+      z-index: 999;
+      height: 80px;
+      width: 80px;
+      background-color: #fff;
+      margin-top: -40px;
+      line-height: 80px;
+      font-size: 30px;
+      font-family: "helvetica neue light";
+      position: absolute;
+      border-radius: 50%;
+      text-align: center; }
