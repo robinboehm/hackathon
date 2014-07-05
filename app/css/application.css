@@ -205,6 +205,10 @@ body {
   .startpage img {
     margin-top: 150px; }
 
+.fullscreen {
+  position: absolute;
+  width: 100%; }
+
 .btn-choice {
   padding: 30px;
   border-radius: 10px;
