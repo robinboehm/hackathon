@@ -1,12 +1,11 @@
 @import "reset";
-@import "component";
+@import "effects";
 
 
 .fullscreen {
   position:absolute;
   top: 0; right: 0; bottom: 0; left: 0;
 }
-
 
 .btn-choice {
   padding: 30px;
@@ -16,10 +15,8 @@
   font-size: 18px;
 }
 
-
 $choice-img-border: 3px;
 $choice-circle-radius: 30px;
-
 
 .img-choice-container {
   display: -webkit-flex;
@@ -44,7 +41,6 @@ $choice-circle-radius: 30px;
         position: absolute;
         top: 10px;
       }
-
     }
 
     &:first-child:before { display: none; }
