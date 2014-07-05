@@ -194,6 +194,8 @@ figure.effect-milo {
 .img-choice-container {
   display: -webkit-flex;
   display: flex; }
+  .img-choice-container:hover .img-choice:before {
+    opacity: 0.5; }
   .img-choice-container .img-choice {
     position: relative;
     height: 300px;
@@ -216,6 +218,7 @@ figure.effect-milo {
     .img-choice-container .img-choice:first-child:before {
       display: none; }
     .img-choice-container .img-choice:before {
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       position: absolute;
       left: -33px;
       top: 50%;
