@@ -13,8 +13,64 @@
 
 	</div>
 	<h2 class="ribbon">Visual Search</h2>
-<div ng-include="'views/choices.html'" ng-controller="choicesCtrl" class="fullscreen"></div>
+	<div class="fullscreen">
+		<div ng-include="'views/choices.html'" ng-controller="choicesCtrl"></div>
 
+
+
+		<div class="results">
+			<ul>
+				<li class="cityItem">
+          <a href="#" class="item">
+              <div class="wrap">
+                  <span class="title" >Duesseldorf</span>
+                  <span class="sub-title" >Germany</span>
+              </div>
+          </a>
+	      </li>
+				<li class="cityItem">
+          <a href="#" class="item">
+              <div class="wrap">
+                  <span class="title" >Duesseldorf</span>
+                  <span class="sub-title" >Germany</span>
+              </div>
+          </a>
+	      </li>
+				<li class="cityItem active">
+          <a href="#" class="item">
+              <div class="wrap">
+                  <span class="title" >Duesseldorf</span>
+                  <span class="sub-title" >Germany</span>
+              </div>
+          </a>
+	      </li>
+				<li class="cityItem">
+          <a href="#" class="item">
+              <div class="wrap">
+                  <span class="title" >Duesseldorf</span>
+                  <span class="sub-title" >Germany</span>
+              </div>
+          </a>
+	      </li>
+				<li class="cityItem">
+          <a href="#" class="item">
+              <div class="wrap">
+                  <span class="title" >Duesseldorf</span>
+                  <span class="sub-title" >Germany</span>
+              </div>
+          </a>
+	      </li>
+
+	    </ul>
+		</div>
+
+
+		<div class="iframeWrapper">
+			<iframe src="http://www.trivago.com/?iPathId=15475" scrolling="no" ></iframe>
+		</div>
+
+
+</div>
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
