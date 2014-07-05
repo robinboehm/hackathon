@@ -228,7 +228,7 @@ body {
     .img-choice-container .img-choice:first-child:before {
       display: none; }
     .img-choice-container .img-choice:before {
-      -webkit-transition: all 0.35s, -webkit-transform 0.35s;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       position: absolute;
       left: -33px;
       top: 50%;

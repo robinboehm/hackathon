@@ -55,7 +55,7 @@ $choice-circle-radius: 30px;
 
     &:first-child:before { display: none; }
     &:before {
-      -webkit-transition: all 0.35s, -webkit-transform 0.35s;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       position: absolute;
       left: -$choice-circle-radius+ -$choice-img-border;
       top: 50%;
