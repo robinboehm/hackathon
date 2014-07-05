@@ -6,9 +6,19 @@
 }
 
 
-.choice {
+.btn-choice {
   padding: 30px;
   border-radius: 10px;
   background-color: #f9f9f9;
   border: 1 px solid #eee;
+  font-size: 18px;
+}
+
+
+.img-choice {
+  background-color: #ff0000;
+  background-size: cover;
+  height: 300px;
+  width: 30%;
+  display: inline-block;
 }
