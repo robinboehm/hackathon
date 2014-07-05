@@ -38,14 +38,23 @@ angular.module('trivagoApp')
       }];
 
     // Mock function for transition test
-    function choose(value){
-      choices.push(possibleChoices.shift());
+    function choose(value, index, level){
+      // Readable maintainable
+      var forward = (level+1)===choices.length;
+
+      if(forward){
+        choices.push(possibleChoices.shift());
+      }
+      // Step back
+      else{
+        possibleChoices.unshift(choices.pop());
+      }
     }
 
     return {
       choices: choices,
-      choose: function (value) {
-        return choose(value);
+      choose: function (value, index, parentIndex) {
+        return choose(value, index, parentIndex);
       }
     };
   });

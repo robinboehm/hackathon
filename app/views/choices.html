@@ -4,7 +4,7 @@
   <div class="img-choice-container" ng-style="{ opacity: 1-(choices.length-$index-1)*0.3 }">
     <div ng-repeat="item in choice.items"
          class="img-choice"
-         ng-click="choose(item.value)">
+         ng-click="choose(item.value, $index, $parent.$index)">
       <figure class="effect-milo fullscreen">
         <img class="img-choice" ng-src="images/{{item.image}}" alt="{{item.image}}"/>
         <figcaption>
