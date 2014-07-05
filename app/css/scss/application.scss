@@ -24,7 +24,8 @@ $choice-circle-radius: 30px;
 
   &:hover {
     .img-choice:before {
-      opacity: 0.5;
+      opacity: 0;
+      top: 0;
     }
   }
 
@@ -52,10 +53,11 @@ $choice-circle-radius: 30px;
 
     &:first-child:before { display: none; }
     &:before {
-      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+      -webkit-transition: all 0.35s, -webkit-transform 0.35s;
       position: absolute;
       left: -$choice-circle-radius+ -$choice-img-border;
       top: 50%;
+
       content: "OR";
       z-index: 999;
       height: $choice-circle-radius*2;
