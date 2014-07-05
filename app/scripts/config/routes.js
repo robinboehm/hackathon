@@ -2,5 +2,5 @@ angular.module('trivagoApp')
   .config(function($routeProvider) {
     $routeProvider
       .when('/choices', { templateUrl: 'views/choices.html', controller: 'choicesCtrl' })
-      .otherwise({redirectTo: '/choices/0' });
+      .otherwise({redirectTo: '/choices' });
   });
