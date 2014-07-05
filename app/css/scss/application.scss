@@ -1,5 +1,6 @@
 @import "reset";
 @import "animations";
+@import "component";
 
 
 .fullscreen {
@@ -18,7 +19,7 @@
 
 
 $choice-img-border: 3px;
-$choice-circle-radius: 40px;
+$choice-circle-radius: 30px;
 
 
 .img-choice-container {
@@ -51,8 +52,8 @@ $choice-circle-radius: 40px;
 
     }
 
+    &:first-child:before { display: none; }
     &:before {
-      &:first-child { display: none; }
       position: absolute;
       left: -$choice-circle-radius;
       top: 50%;
@@ -63,8 +64,7 @@ $choice-circle-radius: 40px;
       background-color: #fff;
       margin-top: -$choice-circle-radius;
       line-height: $choice-circle-radius*2;
-      font-size: 30px;
-      position: absolute;
+      font-size: 15px;
       border-radius: 50%;
       text-align: center;
     }

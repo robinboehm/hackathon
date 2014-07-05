@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "dependencies": {
     "gulp": "^3.8.2",
-    "gulp-sass": "^0.7.2"
+    "gulp-sass": "^0.7.2",
+    "browser-sync": "^1.1.2"
   },
   "devDependencies": {
     "gulp": "^3.8.2",
