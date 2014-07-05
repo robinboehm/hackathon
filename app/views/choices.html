@@ -1,6 +1,6 @@
 <div ng-repeat="(name, choice) in choices" class="choices-container">
 
-  <div class="img-choice-container" ng-style="{ opacity: 1-(choices.length-$index-1)*0.3 }">
+  <div class="img-choice-container" ng-style="{ '-webkit-filter': $last ? '' : 'grayscale(70%)' }">
     <div ng-repeat="item in choice"
          class="img-choice"
          ng-click="choose(item.key[2], $parent.$index + 1)">
