@@ -1,0 +1,13 @@
+{
+  "name": "hackathon",
+  "version": "0.0.0",
+  "homepage": "https://github.com/robinboehm/hackathon",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
