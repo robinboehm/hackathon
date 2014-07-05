@@ -205,6 +205,18 @@ body {
   .startpage img {
     margin-top: 150px; }
 
+.ribbon {
+  background: url(../images/ribbon.png);
+  display: inline-block;
+  font-size: 0.1px;
+  width: 273px;
+  height: 109px;
+  position: absolute;
+  left: 50%;
+  margin-left: -136px;
+  top: 341px;
+  z-index: 100; }
+
 .fullscreen {
   position: absolute;
   width: 100%; }
@@ -218,7 +230,8 @@ body {
 
 .img-choice-container {
   display: -webkit-flex;
-  display: flex; }
+  display: flex;
+  margin: 0 0 40px 0; }
   .img-choice-container:hover .img-choice:before {
     opacity: 0; }
   .img-choice-container .img-choice {
