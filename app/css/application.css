@@ -71,8 +71,14 @@
       border-left: none; }
     .img-choice-container .img-choice:last-child {
       border-right: none; }
-    .img-choice-container .img-choice:first-child:before {
-      display: none; }
+    .img-choice-container .img-choice figure {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+      color: #FFFFFF; }
+      .img-choice-container .img-choice figure figcaption {
+        position: absolute;
+        top: 10px; }
     .img-choice-container .img-choice:before {
       position: absolute;
       left: -40px;
@@ -85,7 +91,8 @@
       margin-top: -40px;
       line-height: 80px;
       font-size: 30px;
-      font-family: "helvetica neue light";
       position: absolute;
       border-radius: 50%;
       text-align: center; }
+      .img-choice-container .img-choice:before:first-child {
+        display: none; }

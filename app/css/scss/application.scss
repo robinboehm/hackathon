@@ -38,8 +38,21 @@ $choice-circle-radius: 40px;
     &:first-child { border-left: none; }
     &:last-child  { border-right: none; }
 
+    figure{
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+      color: #FFFFFF;
+
+      figcaption{
+        position: absolute;
+        top: 10px;
+      }
+
+    }
+
     &:before {
-      :first-child:& { display: none; }
+      &:first-child { display: none; }
       position: absolute;
       left: -$choice-circle-radius;
       top: 50%;
