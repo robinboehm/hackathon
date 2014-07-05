@@ -231,7 +231,7 @@ body {
 .img-choice-container {
   display: -webkit-flex;
   display: flex;
-  margin: 0 0 40px 0; }
+  margin: 0 0 50px 0; }
   .img-choice-container:hover .img-choice:before {
     opacity: 0; }
   .img-choice-container .img-choice {
@@ -239,8 +239,8 @@ body {
     height: 300px;
     flex-grow: 1;
     display: inline-block;
-    border-right: 3px solid transparent;
-    border-left: 3px solid transparent;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
     cursor: pointer; }
     .img-choice-container .img-choice:first-child {
       border-left: none; }
@@ -260,7 +260,7 @@ body {
     .img-choice-container .img-choice:before {
       -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       position: absolute;
-      left: -33px;
+      left: -40px;
       top: 50%;
       content: "OR";
       z-index: 999;

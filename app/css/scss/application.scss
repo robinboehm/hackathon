@@ -44,13 +44,14 @@ body {
   font-size: 18px;
 }
 
-$choice-img-border: 3px;
+$choice-img-border: 10px;
 $choice-circle-radius: 30px;
 
 .img-choice-container {
   display: -webkit-flex;
   display: flex;
-	margin:0 0 40px 0;
+  margin:0 0 50px 0;
+
   &:hover {
     .img-choice:before {
       opacity: 0;
