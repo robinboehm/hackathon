@@ -50,7 +50,7 @@ $choice-circle-radius: 30px;
     &:first-child:before { display: none; }
     &:before {
       position: absolute;
-      left: -$choice-circle-radius;
+      left: -$choice-circle-radius+ -$choice-img-border;
       top: 50%;
       content: "OR";
       z-index: 999;

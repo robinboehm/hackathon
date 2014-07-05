@@ -291,7 +291,7 @@ figure.effect-milo:hover p {
       display: none; }
     .img-choice-container .img-choice:before {
       position: absolute;
-      left: -30px;
+      left: -33px;
       top: 50%;
       content: "OR";
       z-index: 999;
