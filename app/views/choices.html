@@ -1,5 +1,4 @@
 <div ng-repeat="(name, choice) in choices" class="choices-container">
-  <p>{{choice.name}}</p>
 
   <div class="img-choice-container" ng-style="{ opacity: 1-(choices.length-$index-1)*0.3 }">
     <div ng-repeat="item in choice"
@@ -14,4 +13,5 @@
       </figure>
     </div>
   </div>
+
 </div>

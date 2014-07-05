@@ -4,6 +4,13 @@ angular.module('trivagoApp')
     $scope.choices = choicesService.choices;
     $scope.choose = choicesService.choose;
 
+
+    $scope.$watch('choices.length', function(step, oldStep){
+      if (step === 0) { return; }
+      var scrollPos = $(".startpage").height()+((step)*350)-$(window).height();
+      $("html, body").animate({scrollTop:scrollPos}, '300');
+    })
+
   });
 
 

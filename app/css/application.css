@@ -272,3 +272,10 @@ body {
       font-size: 15px;
       border-radius: 50%;
       text-align: center; }
+
+.choices-container.ng-leave {
+  -webkit-transition: 0.5s linear all;
+  height: 300px; }
+
+.choices-container.ng-enter.ng-enter-active {
+  height: 0; }

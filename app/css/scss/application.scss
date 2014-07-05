@@ -101,3 +101,11 @@ $choice-circle-radius: 30px;
   }
 }
 
+.choices-container.ng-leave {
+  -webkit-transition:0.5s linear all;
+  height: 300px;
+}
+
+.choices-container.ng-enter.ng-enter-active {
+  height: 0;
+}
