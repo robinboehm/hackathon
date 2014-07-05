@@ -2,9 +2,12 @@
 
 
 
-<div ng-repeat="choice in choices">
+<div ng-repeat="choice in choices" class="choices-container">
   <p>{{choice.name}}</p>
 
-  <div ng-repeat="item in choice.items" class="img-choice" style="background-image: url(images/{{item.image}});"></div>
+  <div class="img-choice-container">
+    <div ng-repeat="item in choice.items" class="img-choice" style="background-image: url(images/{{item.image}});"></div>
+  </div>
+
 
 </div>

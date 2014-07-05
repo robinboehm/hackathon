@@ -1,3 +1,8 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .slide-left, .slide-right {
   position: absolute;
   top: 0;
@@ -49,9 +54,18 @@
   border: 1 px solid #eee;
   font-size: 18px; }
 
-.img-choice {
-  background-color: #ff0000;
-  background-size: cover;
-  height: 300px;
-  width: 30%;
-  display: inline-block; }
+.img-choice-container {
+  display: -webkit-flex;
+  display: flex; }
+  .img-choice-container .img-choice {
+    background-color: #ff0000;
+    background-size: cover;
+    height: 300px;
+    flex-grow: 1;
+    display: inline-block;
+    border-right: 3px solid #fff;
+    border-left: 3px solid #fff; }
+    .img-choice-container .img-choice:first-child {
+      border-left: none; }
+    .img-choice-container .img-choice:last-child {
+      border-right: none; }
