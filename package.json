@@ -2,12 +2,14 @@
   "name": "hackathon",
   "version": "0.0.1",
   "dependencies": {
-    "gulp": "^3.8.2",
-    "gulp-sass": "^0.7.2",
-    "browser-sync": "^1.1.2"
+
   },
   "devDependencies": {
     "gulp": "^3.8.2",
-    "gulp-sass": "^0.7.2"
+    "gulp-sass": "^0.7.2",
+    "browser-sync": "^1.1.2",
+    "karma-jasmine": "^0.1.5",
+    "karma-ng-html2js-preprocessor": "^0.1.0",
+    "karma-phantomjs-launcher": "^0.1.4"
   }
 }
