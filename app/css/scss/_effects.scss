@@ -8,17 +8,21 @@ figure.effect-milo {
 
 
   h2 {
-    position: absolute;
     right: 0;
     bottom: 0;
     padding: 1em 1.2em;
     opacity: 0;
     font-weight: 300;
+    text-align: center;
     text-transform: uppercase;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -webkit-transform: translate3d(-40px,0,0);
+    transform: translate3d(-40px,0,0);    
   }
   &:hover h2 {
     opacity: 0.9;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
   }
 
   img {
@@ -36,24 +40,6 @@ figure.effect-milo {
     opacity: 0.5;
     -webkit-transform: translate3d(0,0,0) scale(1);
     transform: translate3d(0,0,0) scale(1);
-  }
-
-  p {
-    padding: 0 10px 0 0;
-    width: 50%;
-    border-right: 1px solid #fff;
-    font-weight: 300;
-    text-align: right;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-40px,0,0);
-    transform: translate3d(-40px,0,0);
-  }
-  &:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
   }
 
 }

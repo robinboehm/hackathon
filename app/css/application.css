@@ -144,16 +144,20 @@ table {
 figure.effect-milo {
   background: #2e5d5a; }
   figure.effect-milo h2 {
-    position: absolute;
     right: 0;
     bottom: 0;
     padding: 1em 1.2em;
     opacity: 0;
     font-weight: 300;
+    text-align: center;
     text-transform: uppercase;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; }
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0); }
   figure.effect-milo:hover h2 {
-    opacity: 0.9; }
+    opacity: 0.9;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); }
   figure.effect-milo img {
     width: -webkit-calc(100% + 60px);
     width: calc(100% + 60px);
@@ -168,21 +172,24 @@ figure.effect-milo {
     opacity: 0.5;
     -webkit-transform: translate3d(0, 0, 0) scale(1);
     transform: translate3d(0, 0, 0) scale(1); }
-  figure.effect-milo p {
-    padding: 0 10px 0 0;
-    width: 50%;
-    border-right: 1px solid #fff;
-    font-weight: 300;
-    text-align: right;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(-40px, 0, 0);
-    transform: translate3d(-40px, 0, 0); }
-  figure.effect-milo:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(fonts/RalewayLight.woff) format('woff'); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(fonts/Raleway.woff) format('woff'); }
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(fonts/Raleway-ExtraBold.woff) format('woff'); }
 
 .fullscreen {
   position: absolute;
@@ -222,7 +229,9 @@ figure.effect-milo {
       color: #FFFFFF; }
       .img-choice-container .img-choice figure figcaption {
         position: absolute;
-        top: 10px; }
+        top: 95px;
+        width: 100%;
+        font-family: 'Raleway'; }
     .img-choice-container .img-choice:first-child:before {
       display: none; }
     .img-choice-container .img-choice:before {
