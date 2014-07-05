@@ -1,7 +1,10 @@
 @import "animations";
 
-body {
-  background-color: #000;
+.container {
 }
 
-h1 { color: #fff; }
+.fullscreen {
+  position:absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+

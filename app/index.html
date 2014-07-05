@@ -6,7 +6,7 @@
 </head>
 <body ng-controller="mainCtrl">
 
-<main class="content" ng-view ng-swipe-left="moveLeft('/2')" ng-swipe-right="moveRight('/1')"></main>
+<div ng-view class="fullscreen" ng-class="'slide-'+direction"></div>
 
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
