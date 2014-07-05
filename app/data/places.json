@@ -106,7 +106,7 @@
   {
     "id": "c4bb1e365e3f6967baa77da96600aa25",
     "key": ["climate", "Cold", ["cold"]],
-    "value": null
+    "value": { "4-ice-weather.jpg": {} }
   },
   {
     "id": "c4bb1e365e3f6967baa77da96600b912",
@@ -116,7 +116,7 @@
   {
     "id": "c4bb1e365e3f6967baa77da96600aafe",
     "key": ["climate", "Moderate", ["moderate"]],
-    "value": null
+    "value": { "4-moderate-weather.jpg": {} }
   },
   {
     "id": "c4bb1e365e3f6967baa77da96600076d",
