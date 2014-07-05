@@ -1,9 +1,21 @@
 angular.module('trivagoApp')
   .controller('choiceCtrl', function($scope, $routeParams) {
     $scope.choices = choices = [
-      [{ name: 'hot',  value: '1' }, { name: 'cold', value: '2'  }],
-      [{ name: 'left', value: '1' }, { name: 'right', value: '2' }],
-      [{ name: 'big',  value: '1' }, { name: 'small', value: '2' }]
+      {
+        name: 'Do you like it... ?',
+        color: '#00d4b4',
+        items: [{ name: 'hot',  value: '1' }, { name: 'cold', value: '2'  }]
+      },
+      {
+        name: 'Which direction... ?',
+        color: '#d4081a',
+        items: [{ name: 'left', value: '1' }, { name: 'right', value: '2' }]
+      },
+      {
+        name: 'Do you like it... ?',
+        color: '#c09853',
+        items: [{ name: 'big',  value: '1' }, { name: 'small', value: '2' }]
+      }
     ];
     var choiceCount = choices.length;
     var currentChoiceIndex = parseInt($routeParams.step || '0');
