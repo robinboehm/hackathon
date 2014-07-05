@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Raleway Light'), local('Raleway-Light'), url(fonts/RalewayLight.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), url(fonts/Raleway.woff) format('woff');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Raleway ExtraBold'), local('Raleway-ExtraBold'), url(fonts/Raleway-ExtraBold.woff) format('woff');
+}
+
