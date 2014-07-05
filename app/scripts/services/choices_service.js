@@ -22,6 +22,10 @@ angular.module('trivagoApp')
 
 
     function goToStep(step) {
+
+      scrollPos = $(".startpage").height()+((step+1)*350)-$(window).height();
+      $("html, body").animate({scrollTop:scrollPos}, '300');
+      
       choices.length = 0;
       for (var i = 0; i <= step; i++) {
         if (angular.isDefined(stepOrder[i])) {
