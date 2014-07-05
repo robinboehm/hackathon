@@ -1,5 +1,5 @@
 angular.module('trivagoApp')
-  .controller('mainCtrl', function($scope, $location, $routeParams) {
+  .controller('mainCtrl', function($scope, $location) {
 
     $scope.moveLeft = function(href) {
       $scope.direction = 'left';
