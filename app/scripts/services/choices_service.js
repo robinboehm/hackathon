@@ -8,7 +8,11 @@ angular.module('trivagoApp')
           { name: 'beach',    value: '1', image: '1-beach.jpg' },
           { name: 'mountain', value: '3', image: '1-mountains.jpg' }
         ]
-      },
+      }
+    ];
+
+    // Mock Object for transition test
+    var possibleChoices = [
       {
         name: 'maindirection',
         items: [
@@ -18,11 +22,11 @@ angular.module('trivagoApp')
         ]
       },
       {
-        name: 'art 	activity',
+        name: 'art activity',
         items: [
-          { name: 'party',  value: '1', image: '2-party.jpg' },
-          { name: 'silence', value: '2', image: '2-silence.jpg' },
-          { name: 'sport', value: '3', image: '2-sport.jpg' }
+          { name: 'party',    value: '1', image: '2-party.jpg' },
+          { name: 'silence',  value: '2', image: '2-silence.jpg' },
+          { name: 'sport',    value: '3', image: '2-sport.jpg' }
         ]
       },
       {
@@ -31,10 +35,17 @@ angular.module('trivagoApp')
           { name: 'big',   value: '1', image: '' },
           { name: 'small', value: '2', image: '' }
         ]
-      }
-    ];
+      }];
+
+    // Mock function for transition test
+    function choose(value){
+      choices.push(possibleChoices.shift());
+    }
 
     return {
-      choices: choices
+      choices: choices,
+      choose: function (value) {
+        return choose(value);
+      }
     };
   });

@@ -12,7 +12,9 @@
   </div>-->
 
   <div class="img-choice-container">
-    <div ng-repeat="item in choice.items" class="img-choice">
+    <div ng-repeat="item in choice.items"
+         class="img-choice"
+         ng-click="choose(item.value)">
       <figure class="effect-milo fullscreen">
         <img class="img-choice" ng-src="images/{{item.image}}" alt="{{item.image}}"/>
         <figcaption>
