@@ -1,6 +1,11 @@
+$main-background: #f6f6f6;
 @import "reset";
 @import "effects";
 @import "fonts";
+
+body {
+  background-color: $main-background;
+}
 
 
 .fullscreen {
@@ -26,18 +31,15 @@ $choice-circle-radius: 30px;
   &:hover {
     .img-choice:before {
       opacity: 0;
-      top: 0;
     }
   }
-
-
   .img-choice {
     position: relative;
     height: 300px;
     flex-grow: 1;
     display: inline-block;
-    border-right: $choice-img-border solid #fff;
-    border-left:  $choice-img-border solid #fff;
+    border-right: $choice-img-border solid transparent;
+    border-left:  $choice-img-border solid transparent;
     cursor: pointer;
     &:first-child { border-left: none; }
     &:last-child  { border-right: none; }
@@ -56,7 +58,7 @@ $choice-circle-radius: 30px;
 
     &:first-child:before { display: none; }
     &:before {
-      -webkit-transition: all 0.35s, -webkit-transform 0.35s;
+      -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
       position: absolute;
       left: -$choice-circle-radius+ -$choice-img-border;
       top: 50%;
@@ -65,7 +67,7 @@ $choice-circle-radius: 30px;
       z-index: 999;
       height: $choice-circle-radius*2;
       width: $choice-circle-radius*2;
-      background-color: #fff;
+      background-color: $main-background;
       margin-top: -$choice-circle-radius;
       line-height: $choice-circle-radius*2;
       font-size: 15px;
