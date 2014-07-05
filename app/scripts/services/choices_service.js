@@ -34,5 +34,7 @@ angular.module('trivagoApp')
       }
     ];
 
-    return choices;
+    return {
+      choices: choices
+    };
   });
