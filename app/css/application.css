@@ -205,8 +205,7 @@ body {
   display: -webkit-flex;
   display: flex; }
   .img-choice-container:hover .img-choice:before {
-    opacity: 0;
-    top: 0; }
+    opacity: 0; }
   .img-choice-container .img-choice {
     position: relative;
     height: 300px;
