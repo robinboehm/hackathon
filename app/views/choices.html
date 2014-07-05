@@ -1,15 +1,5 @@
-
-
-
-
 <div ng-repeat="choice in choices" class="choices-container">
   <p>{{choice.name}}</p>
-
-  <!--<div class="img-choice-container">
-    <div ng-repeat="item in choice.items" class="img-choice" style="background-image: url(images/{{item.image}});">
-      <div>{{item.name}}</div>
-    </div>
-  </div>-->
 
   <div class="img-choice-container">
     <div ng-repeat="item in choice.items"
@@ -19,11 +9,9 @@
         <img class="img-choice" ng-src="images/{{item.image}}" alt="{{item.image}}"/>
         <figcaption>
           <h2>{{item.name}}</h2>
-
           <p>Milo went to the woods. He took a fun ride and never came back.</p>
         </figcaption>
       </figure>
     </div>
   </div>
-
 </div>
