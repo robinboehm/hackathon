@@ -1,11 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="trivagoApp">
 <head>
-  <title></title>
+  <title>Trivago Visual Search</title>
+  <link rel="stylesheet" href="css/application.css" />
 </head>
-<body>
+<body ng-controller="mainCtrl">
 
+<main class="content" ng-view ng-swipe-left="moveLeft('/2')" ng-swipe-right="moveRight('/1')"></main>
 
 <script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="scripts/module.js"></script>
+<script src="scripts/config/routes.js"></script>
+<script src="scripts/controllers/main_ctrl.js"></script>
 </body>
 </html>

@@ -1,0 +1,1 @@
+angular.module('trivagoApp', ['ngRoute', 'ngAnimate', 'ngTouch']);
