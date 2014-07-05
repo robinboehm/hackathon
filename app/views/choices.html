@@ -2,7 +2,7 @@
   <p>{{choice.name}}</p>
 
   <div class="img-choice-container" ng-style="{ opacity: 1-(choices.length-$index-1)*0.3 }">
-    <div ng-repeat="item in choice track by $index"
+    <div ng-repeat="item in choice"
          class="img-choice"
          ng-click="choose(item.key[2], $parent.$index + 1)">
       <figure class="effect-milo fullscreen">
