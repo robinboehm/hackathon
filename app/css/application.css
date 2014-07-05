@@ -194,12 +194,16 @@ figure.effect-milo {
 body {
   background-color: #f6f6f6; }
 
-.fullscreen {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; }
+.startpage {
+  border-top: 5px solid #2a6ac0;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  background-image: url(../images/trivago-startpage-topLeft.jpg), url(../images/trivago-startpage-topRight.jpg);
+  background-position: top left, top right;
+  background-repeat: no-repeat; }
+  .startpage img {
+    margin-top: 150px; }
 
 .btn-choice {
   padding: 30px;
