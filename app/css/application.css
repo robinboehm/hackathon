@@ -307,9 +307,6 @@ figure.effect-milo:hover p {
   display: flex; }
   .img-choice-container .img-choice {
     position: relative;
-    background-color: #ff0000;
-    background-size: cover;
-    background-position: center;
     height: 300px;
     flex-grow: 1;
     display: inline-block;
@@ -320,7 +317,6 @@ figure.effect-milo:hover p {
     .img-choice-container .img-choice:last-child {
       border-right: none; }
     .img-choice-container .img-choice figure {
-      position: relative;
       overflow: hidden;
       height: 300px;
       color: #FFFFFF; }

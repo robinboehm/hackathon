@@ -28,9 +28,6 @@ $choice-circle-radius: 30px;
 
   .img-choice {
     position: relative;
-    background-color: #ff0000;
-    background-size: cover;
-    background-position: center;
     height: 300px;
     flex-grow: 1;
     display: inline-block;
@@ -40,7 +37,6 @@ $choice-circle-radius: 30px;
     &:last-child  { border-right: none; }
 
     figure{
-      position: relative;
       overflow: hidden;
       height: 300px;
       color: #FFFFFF;
