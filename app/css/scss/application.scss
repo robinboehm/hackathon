@@ -1,5 +1,4 @@
 @import "reset";
-@import "animations";
 @import "component";
 
 
@@ -33,6 +32,7 @@ $choice-circle-radius: 30px;
     display: inline-block;
     border-right: $choice-img-border solid #fff;
     border-left:  $choice-img-border solid #fff;
+    cursor: pointer;
     &:first-child { border-left: none; }
     &:last-child  { border-right: none; }
 
@@ -40,7 +40,6 @@ $choice-circle-radius: 30px;
       overflow: hidden;
       height: 300px;
       color: #FFFFFF;
-
       figcaption{
         position: absolute;
         top: 10px;
