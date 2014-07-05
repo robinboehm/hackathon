@@ -1,14 +1,15 @@
-<div ng-repeat="choice in choices" class="choices-container">
-  <!--<p>{{choice.name}}</p>-->
+<div ng-repeat="(name, choice) in choices track by $index" class="choices-container">
+  <p>{{choice.name}}</p>
 
   <div class="img-choice-container" ng-style="{ opacity: 1-(choices.length-$index-1)*0.3 }">
-    <div ng-repeat="item in choice.items"
+    <div ng-repeat="item in choice track by $index"
          class="img-choice"
-         ng-click="choose(item.value, $index, $parent.$index)">
+         ng-click="choose(item.key[2], $parent.$index + 1)">
       <figure class="effect-milo fullscreen">
-        <img class="img-choice" ng-src="images/{{item.image}}" alt="{{item.image}}"/>
+        <!-- Strange? ya! Because of CouchDB Image Data structure. Alternative: write a getImageName Fn -->
+        <img ng-repeat="(imageName, data) in item.value" class="img-choice" ng-src="images/{{imageName}}" alt="{{item.image}}"/>
         <figcaption>
-          <h2>{{item.name}}</h2>
+          <h2>{{item.key[1]}}</h2>
         </figcaption>
       </figure>
     </div>
