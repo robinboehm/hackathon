@@ -30,7 +30,7 @@ angular.module('trivagoApp')
 
     function goToStep(step) {
       choices.length = 0;
-      
+
       var tempTags = selectedChoices.map(function(choice) {
         return choice.key[2];
       });
@@ -41,6 +41,7 @@ angular.module('trivagoApp')
 
       for (var i = 0; i <= step; i++) {
         if(stepOrder.length <= i) {
+          $("html, body").animate({scrollTop: $(".startpage").height()+((5)*350)-$(window).height()}, '300');
           break;
         }
         if (angular.isDefined(stepOrder[i])) {
@@ -59,9 +60,11 @@ angular.module('trivagoApp')
             return !isExcluded;
           });
           if(filteredChoices.length > 0) {
+            console.log(filteredChoices);
             choices.push(filteredChoices);
           } else {
             // load city
+            // console.log('load city')
           }
         }
       }
