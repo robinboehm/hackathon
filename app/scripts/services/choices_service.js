@@ -4,7 +4,9 @@ angular.module('trivagoApp')
     var choices = [];
     var possibleChoices = {};
 
-    var stepOrder = ['general', 'price', 'activityType', 'activity', 'climate']
+    var stepOrder = ['general',
+      //'price',
+      'activityType', 'activity', 'climate'];
 
     $http.get('data/places.json')
       .then(function (response) {
