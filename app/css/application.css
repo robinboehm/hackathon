@@ -149,6 +149,7 @@ figure.effect-milo {
     padding: 1em 1.2em;
     opacity: 0;
     font-weight: 300;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -298,7 +299,7 @@ iframe {
       color: #FFFFFF; }
       .img-choice-container .img-choice figure figcaption {
         position: absolute;
-        top: 95px;
+        top: 80px;
         width: 100%;
         font-family: 'Raleway'; }
     .img-choice-container .img-choice:first-child:before {
