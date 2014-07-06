@@ -6,7 +6,7 @@
 }, {
     "name": "Stockholm",
     "image": "http://www.papastravel.com/wp-content/uploads/2013/09/Stockholm.jpg",
-    "tags": ["hiking", "nature", "moderate", "culture", "silence", "city"],
+    "tags": ["hiking", "nature", "moderate", "culture", "silence", "city", "sightseeing", "cycling"],
     "trivagoId" : 52297
 }, {
     "name": "Barcelona",
@@ -61,7 +61,7 @@
 }, {
     "name": "London",
     "image": "http://www.hdwallpapers.in/walls/tower_bridge_of_london-wide.jpg",
-    "tags": ["city", "sightseeing", "cold", "culture"],
+    "tags": ["city", "sightseeing", "moderate", "silence", "culture"],
     "trivagoId" : 38715
 }, {
     "name": "PortEllen",

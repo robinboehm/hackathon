@@ -97,7 +97,7 @@
   },
   {
     "id": "c4bb1e365e3f6967baa77da96600aa25",
-    "key": ["climate", "Cold", ["cold"], []],
+    "key": ["climate", "Cold", ["cold"], ["beach"]],
     "value": { "4-ice-weather.jpg": {} }
   },
   {
