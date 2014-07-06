@@ -39,6 +39,8 @@ angular.module('trivagoApp')
       tags.length = 0;
       tags.push.apply(tags, tempTags);
 
+      console.log(tags);
+
       for (var i = 0; i <= step; i++) {
         if(stepOrder.length <= i) {
           break;
@@ -78,9 +80,9 @@ angular.module('trivagoApp')
 
     // Mock function for transition test
     function choose(value, step) {
+      selectChoice(value, step);
       processValue(value);
       goToStep(step);
-      selectChoice(value, step);
     }
 
     return {
