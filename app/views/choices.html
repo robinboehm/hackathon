@@ -1,9 +1,10 @@
 <div ng-repeat="(name, choice) in choices" class="choices-container">
 
-  <div class="img-choice-container" ng-style="{ '-webkit-filter': $last ? '' : 'grayscale(70%)' }">
+  <div class="img-choice-container" ng-class="{ active: $last }">
     <div ng-repeat="item in choice"
          class="img-choice"
-         ng-click="choose(item.key[2], $parent.$index + 1)">
+         ng-class="{active: selectedChoices[$parent.$index] === item}"
+         ng-click="choose(item, $parent.$index + 1)">
       <figure class="effect-milo fullscreen">
         <!-- Strange? ya! Because of CouchDB Image Data structure. Alternative: write a getImageName Fn -->
         <img ng-repeat="(imageName, data) in item.value" class="img-choice" ng-src="images/{{imageName}}" alt="{{item.image}}"/>

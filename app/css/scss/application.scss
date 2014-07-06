@@ -99,6 +99,11 @@ $choice-circle-radius: 30px;
   display: -webkit-flex;
   display: flex;
   margin:0 0 50px 0;
+  -webkit-filter: sepia(70%);
+
+  &.active {
+    -webkit-filter: none;
+  }
 
   &:hover {
     .img-choice:before {
@@ -116,13 +121,16 @@ $choice-circle-radius: 30px;
     &:first-child { border-left: none; }
     &:last-child  { border-right: none; }
 
+    &.active {
+      border: 4px solid #ff0000;
+    }
     figure{
       overflow: hidden;
       height: 300px;
       color: #FFFFFF;      
       figcaption{
         position: absolute;
-        top: 95px;
+        top: 80px;
         width:100%;
         font-family: 'Raleway';
       }

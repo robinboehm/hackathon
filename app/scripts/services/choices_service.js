@@ -3,6 +3,7 @@ angular.module('trivagoApp')
 
     var choices = [];
     var possibleChoices = {};
+    var selectedChoices = [];
 
     var stepOrder = ['general',
       //'price',
@@ -33,6 +34,7 @@ angular.module('trivagoApp')
     }
 
     function processValue(value){
+      selectedChoices.push(value);
       console.log(value);
     }
 
@@ -44,6 +46,7 @@ angular.module('trivagoApp')
 
     return {
       choices: choices,
+      selectedChoices: selectedChoices,
       choose: function (value, parentIndex) {
         return choose(value, parentIndex);
       }

@@ -149,6 +149,7 @@ figure.effect-milo {
     padding: 1em 1.2em;
     opacity: 0;
     font-weight: 300;
+    font-size: 30px;
     text-align: center;
     text-transform: uppercase;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
@@ -277,7 +278,10 @@ iframe {
 .img-choice-container {
   display: -webkit-flex;
   display: flex;
-  margin: 0 0 50px 0; }
+  margin: 0 0 50px 0;
+  -webkit-filter: sepia(70%); }
+  .img-choice-container.active {
+    -webkit-filter: none; }
   .img-choice-container:hover .img-choice:before {
     opacity: 0; }
   .img-choice-container .img-choice {
@@ -292,13 +296,15 @@ iframe {
       border-left: none; }
     .img-choice-container .img-choice:last-child {
       border-right: none; }
+    .img-choice-container .img-choice.active {
+      border: 4px solid #ff0000; }
     .img-choice-container .img-choice figure {
       overflow: hidden;
       height: 300px;
       color: #FFFFFF; }
       .img-choice-container .img-choice figure figcaption {
         position: absolute;
-        top: 95px;
+        top: 80px;
         width: 100%;
         font-family: 'Raleway'; }
     .img-choice-container .img-choice:first-child:before {
