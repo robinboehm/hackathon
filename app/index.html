@@ -20,7 +20,7 @@
 
 		<div class="results" ng-if="selectedChoices.length > 0">
 			<ul>
-				<li class="cityItem" ng-repeat="city in findCities(tags, 10) track by $index">
+				<li class="cityItem" ng-repeat="city in findCities(tags, 10) track by $index" ng-class="{ 'active' : state.selectedCity==city.trivagoId }">
           <a ng-click="state.selectedCity=city.trivagoId" class="item">
               <div class="wrap">
                   <span class="title">{{city.name}}</span>
