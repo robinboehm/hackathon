@@ -21,7 +21,7 @@
 		<div class="results" ng-if="selectedChoices.length > 0">
 			<ul>
 				<li class="cityItem" ng-repeat="city in findCities(tags, 10) track by $index">
-          <a href="#" class="item">
+          <a ng-click="state.selectedCity=city.trivagoId" class="item">
               <div class="wrap">
                   <span class="title">{{city.name}}</span>
               </div>
@@ -31,8 +31,7 @@
 		</div>
 
 
-		<div class="iframeWrapper" ng-if="selectedChoices.length > 0">
-			<iframe src="http://www.trivago.co.uk/?iPathId=15475" scrolling="no" ></iframe>
+		<div class="iframeWrapper">
 		</div>
 
 

@@ -4,7 +4,7 @@
     <div ng-repeat="item in choice track by $index"
          class="img-choice"
          ng-class="{active: selectedChoices[$parent.$index] === item}"
-         ng-click="choose(item, $parent.$index + 1)">
+         ng-click="choose(item, $parent.$index + 1);state.selectedCity=findCities(tags, 1)[0].trivagoId">
       <figure class="effect-milo fullscreen">
         <!-- Strange? ya! Because of CouchDB Image Data structure. Alternative: write a getImageName Fn -->
         <img ng-repeat="(imageName, data) in item.value" class="img-choice" ng-src="images/{{imageName}}" alt="{{item.image}}"/>
