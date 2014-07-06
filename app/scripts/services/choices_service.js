@@ -30,6 +30,7 @@ angular.module('trivagoApp')
 
     function goToStep(step) {
       choices.length = 0;
+      console.log(step);
       
       var tags = selectedChoices.map(function(choice) {
         return choice.key[2];
@@ -37,6 +38,10 @@ angular.module('trivagoApp')
       tags = tags.concat.apply([], tags);
 
       for (var i = 0; i <= step; i++) {
+        if(stepOrder.length <= i) {
+          console.log('Last step');
+          break;
+        }
         if (angular.isDefined(stepOrder[i])) {
           var filteredChoices = possibleChoices[stepOrder[i]].filter(function(choice) {
             var excludeTags = choice.key[3] || [];
@@ -53,9 +58,10 @@ angular.module('trivagoApp')
             return !isExcluded;
           });
           if(filteredChoices.length > 0) {
+            console.log(filteredChoices);
             choices.push(filteredChoices);
           } else {
-            goToStep(step+1);
+            // goToStep(step+1);
           }
         }
       }
@@ -67,7 +73,7 @@ angular.module('trivagoApp')
 
     // Mock function for transition test
     function choose(value, step) {
-      selectedChoices.splice(step-1,choices.length)
+      selectedChoices.splice(step-1,choices.length);
       selectedChoices.push(value);
       processValue(value);
       goToStep(step);
