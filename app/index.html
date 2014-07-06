@@ -13,12 +13,12 @@
 
 	</div>
 	<h2 class="ribbon">Visual Search</h2>
-	<div class="fullscreen">
-		<div ng-include="'views/choices.html'" ng-controller="choicesCtrl"></div>
+	<div class="fullscreen" ng-controller="choicesCtrl">
+		<div ng-include="'views/choices.html'"></div>
 
 
 
-		<div class="results">
+		<div class="results" ng-if="selectedChoices.length > 0">
 			<ul>
 				<li class="cityItem">
           <a href="#" class="item">
@@ -65,7 +65,7 @@
 		</div>
 
 
-		<div class="iframeWrapper">
+		<div class="iframeWrapper" ng-if="selectedChoices.length > 0">
 			<iframe src="http://www.trivago.co.uk/?iPathId=15475" scrolling="no" ></iframe>
 		</div>
 
