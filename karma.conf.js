@@ -17,12 +17,13 @@ module.exports = function(config) {
     files: [
       //libs
       'app/bower_components/angular/angular.js',
+      'app/bower_components/angular/angular.js',
       'app/bower_components/angular-animate/angular-animate.js',
       'app/bower_components/angular-touch/angular-touch.js',
       'app/bower_components/angular-mocks/angular-mocks.js',
       // src
       'app/**/module.js',
-      'app/**/*.js',
+      'app/scripts/**/*.js',
       'test/_*/*.js',
       /* Match all test files */
       'test/unit/**/*.js',

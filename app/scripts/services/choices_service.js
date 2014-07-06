@@ -34,12 +34,13 @@ angular.module('trivagoApp')
     }
 
     function processValue(value){
-      selectedChoices.push(value);
       console.log(value);
     }
 
     // Mock function for transition test
     function choose(value, step) {
+      selectedChoices.splice(step-1,choices.length)
+      selectedChoices.push(value);
       processValue(value);
       goToStep(step);
     }
