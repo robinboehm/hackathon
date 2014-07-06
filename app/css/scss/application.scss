@@ -100,7 +100,13 @@ $choice-circle-radius: 30px;
   display: flex;
   margin:0 0 50px 0;
 
+  .img-choice:before {
+      opacity: 0;
+  }
   &.active {
+  	.img-choice:before {
+      opacity: 1;
+    }
   	.img-choice { opacity:1; }
     -webkit-filter: none;
     .img-choice img { -webkit-filter: none; opacity:1; }
@@ -108,7 +114,7 @@ $choice-circle-radius: 30px;
 
   &:hover {
     .img-choice:before {
-      opacity: 0;
+      opacity: 1;
     }
   }
   .img-choice {
