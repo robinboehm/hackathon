@@ -8,7 +8,6 @@ angular.module('trivagoApp')
 
     var stepOrder = [
       'general',
-      //'price',
       'climate',
       'activityType',
       'activity'
@@ -76,12 +75,16 @@ angular.module('trivagoApp')
       console.log(value);
     }
 
-    // Mock function for transition test
-    function choose(value, step) {
+    function selectChoice(value, step) {
       selectedChoices.splice(step-1,choices.length);
       selectedChoices.push(value);
+    }
+
+    // Mock function for transition test
+    function choose(value, step) {
       processValue(value);
       goToStep(step);
+      selectChoice(value, step);
     }
 
     return {
