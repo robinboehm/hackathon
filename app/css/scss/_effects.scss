@@ -35,11 +35,10 @@ figure.effect-milo {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  &:hover img {
+  &:hover img.img-choice {
     opacity: 0.5;
     -webkit-transform: translate3d(0,0,0) scale(1);
     transform: translate3d(0,0,0) scale(1);
   }
 }
-
 
