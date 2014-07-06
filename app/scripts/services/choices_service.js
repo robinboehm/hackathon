@@ -5,9 +5,13 @@ angular.module('trivagoApp')
     var possibleChoices = {};
     var selectedChoices = [];
 
-    var stepOrder = ['general',
+    var stepOrder = [
+      'general',
       //'price',
-      'activityType', 'activity', 'climate'];
+      'climate',
+      'activityType',
+      'activity'
+      ];
 
     $http.get('data/places.json')
       .then(function (response) {
@@ -26,9 +30,33 @@ angular.module('trivagoApp')
 
     function goToStep(step) {
       choices.length = 0;
+      
+      var tags = selectedChoices.map(function(choice) {
+        return choice.key[2];
+      });
+      tags = tags.concat.apply([], tags);
+
       for (var i = 0; i <= step; i++) {
         if (angular.isDefined(stepOrder[i])) {
-          choices.push(possibleChoices[stepOrder[i]]);
+          var filteredChoices = possibleChoices[stepOrder[i]].filter(function(choice) {
+            var excludeTags = choice.key[3] || [];
+
+            if(excludeTags.length === 0) {
+              return true;
+            }
+
+            var isExcluded = tags.some(function(tag) {
+              return excludeTags.some(function(excludeTag) {
+                return excludeTag === tag;
+              });
+            });
+            return !isExcluded;
+          });
+          if(filteredChoices.length > 0) {
+            choices.push(filteredChoices);
+          } else {
+            goToStep(step+1);
+          }
         }
       }
     }
