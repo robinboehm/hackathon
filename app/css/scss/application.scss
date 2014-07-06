@@ -99,6 +99,11 @@ $choice-circle-radius: 30px;
   display: -webkit-flex;
   display: flex;
   margin:0 0 50px 0;
+  -webkit-filter: sepia(70%);
+
+  &.active {
+    -webkit-filter: none;
+  }
 
   &:hover {
     .img-choice:before {

@@ -1,6 +1,6 @@
 <div ng-repeat="(name, choice) in choices" class="choices-container">
 
-  <div class="img-choice-container" ng-style="{ '-webkit-filter': $last ? '' : 'grayscale(70%)' }">
+  <div class="img-choice-container" ng-class="{ active: $last }">
     <div ng-repeat="item in choice"
          class="img-choice"
          ng-class="{active: selectedChoices[$parent.$index] === item}"
