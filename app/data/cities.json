@@ -1,85 +1,101 @@
 [{
     "name": "Amsterdam",
     "image": "https://upload.wikimedia.org/wikipedia/commons/b/be/KeizersgrachtReguliersgrachtAmsterdam.jpg",
-    "tags": ["cycling", "city", "moderate", "culture", "sport"]
+    "tags": ["cycling", "city", "moderate", "culture", "sport"],
+    "trivagoId" : 46814
 }, {
     "name": "Stockholm",
     "image": "http://www.papastravel.com/wp-content/uploads/2013/09/Stockholm.jpg",
-    "tags": ["hiking", "nature", "moderate", "culture", "silence", "city"]
+    "tags": ["hiking", "nature", "moderate", "culture", "silence", "city"],
+    "trivagoId" : 52297
 }, {
     "name": "Barcelona",
     "image": "https://iaufrance.org/content/uploads/cms/images/barcelona-spain.jpg",
-    "tags": ["city", "hot", "sightseeing", "culture", "party"]
+    "tags": ["city", "hot", "sightseeing", "culture", "party"],
+    "trivagoId" : 31965
 }, {
     "name": "Berlin",
     "image": "http://ds-lands.com/data_images/top_cityes/berlin/berlin-05.jpg",
-    "tags": ["culture", "moderate", "sightseeing", "culture", "party"]
+    "tags": ["culture", "moderate", "sightseeing", "culture", "party"],
+    "trivagoId" : 8514
 }, {
     "name": "Cologne",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Kdom.jpg",
-    "tags": ["moderate", "sightseeing", "culture", "city", "silence"]
+    "tags": ["moderate", "sightseeing", "culture", "city", "silence"],
+    "trivagoId" : 15481
 }, {
     "name": "Frankfurt",
     "image": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Skyline_Frankfurt_am_Main.jpg",
-    "tags": ["moderate", "culture", "city"]
+    "tags": ["moderate", "culture", "city"],
+    "trivagoId" : 9647
 }, {
-    "name": "Platja
-de
-Palma",
+    "name": "Platja de Palma",
     "image": "http://www.hochschulradio.uni-duesseldorf.de/wp-content/uploads/2012/02/Ballermann-6-dpa.jpg",
-    "tags": ["party", "hot", "beach"]
+    "tags": ["party", "hot", "beach"],
+    "trivagoId" : 31707
 }, {
     "name": "Cannes",
     "image": "http://www.studiosystemnews.com/wp-content/uploads/2014/05/cannes.jpg",
-    "tags": ["beach", "culture", "hot", "city"]
+    "tags": ["beach", "culture", "hot", "city"],
+    "trivagoId" : 37081
 }, {
     "name": "Monaco",
     "image": "http://foundtheworld.com/wp-content/uploads/2014/06/Monaco-4.jpg",
-    "tags": ["beach", "hot", "culture", "city"]
+    "tags": ["beach", "hot", "culture", "city"],
+    "trivagoId" : 42647
 }, {
     "name": "Madrid",
     "image": "http://www.thereviewmag.co.uk/wp-content/uploads/2013/12/Madrid-City-at-Night.jpg",
-    "tags": ["hot", "culture", "sightseeing", "city"]
+    "tags": ["hot", "culture", "sightseeing", "city"],
+    "trivagoId" : 32027
 }, {
     "name": "Meppen",
     "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Meppen_hubbruecke.jpg",
-    "tags": ["cycling", "nature", "sport", "wellness", "silence"]
+    "tags": ["cycling", "nature", "sport", "wellness", "silence"],
+    "trivagoId" : 13479
 }, {
     "name": "Fuerteventura",
     "image": "http://www.thewallpapers.org/photo/25736/Sheraton_Fuerteventura_Beach_Golf_And_Spa_Resort.jpg",
-    "tags": ["beach", "hot", "culture", "sport", "nature"]
+    "tags": ["beach", "hot", "culture", "sport", "nature"],
+    "trivagoId" : 31784
 }, {
     "name": "London",
     "image": "http://www.hdwallpapers.in/walls/tower_bridge_of_london-wide.jpg",
-    "tags": ["city", "sightseeing", "cold", "culture"]
+    "tags": ["city", "sightseeing", "cold", "culture"],
+    "trivagoId" : 38715
 }, {
-    "name": "Port
-Ellen",
+    "name": "PortEllen",
     "image": "http://www.islayinfo.com/islay-pictures-wallpaper/port_ellen_1280x859.jpg",
-    "tags": ["nature", "cold", "beach"]
+    "tags": ["nature", "cold", "beach"],
+    "trivagoId" : 101108
 }, {
     "name": "New York",
     "image": "http://www.burgessyachts.com/media/adminforms/locations/n/e/new_york_1.jpg",
-    "tags": ["city", "moderate", "sightseeing", "culture", "party"]
+    "tags": ["city", "moderate", "sightseeing", "culture", "party"],
+    "trivagoId" : 34812
 }, {
     "name": "San Francisco",
     "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/SF_From_Marin_Highlands3.jpg",
-    "tags": ["city", "beach", "hot", "sightseeing", "culture"]
+    "tags": ["city", "beach", "hot", "sightseeing", "culture"],
+    "trivagoId" : 34308
 }, {
-    "name": "Black Rock
-City",
+    "name": "Reno",
     "image": "http://alexlod.com/wp-content/uploads/2011/09/brc.jpeg",
-    "tags": ["city", "beach", "hot", "culture", "sport", "wellness"]
+    "tags": ["city", "beach", "hot", "culture", "sport", "wellness"],
+    "trivagoId" : 34743
 }, {
     "name": "Düsseldorf",
     "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Medienhafen_Duesseldorf_Nacht.jpg",
-    "tags": ["city", "moderate", "silence"]
+    "tags": ["city", "moderate", "silence"],
+    "trivagoId" : 15475
 }, {
     "name": "Rome",
     "image": "http://vinecdote.com/blog4/wp-content/uploads/2012/01/rome-from-above.jpg",
-    "tags": ["city", "hot", "sightseeing", "culture"]
+    "tags": ["city", "hot", "sightseeing", "culture"],
+    "trivagoId" : 44337
 }, {
     "name": "Reykjavik",
     "image": "http://cdnstatic-2.mydestination.com/library/images/516018_1680_948.jpg",
-    "tags": ["city", "nature", "cold", "wellness", "silence"]
+    "tags": ["city", "nature", "cold", "wellness", "silence"],
+    "trivagoId" : 84866
 }]
