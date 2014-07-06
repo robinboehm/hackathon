@@ -96,6 +96,6 @@
 }, {
     "name": "Reykjavik",
     "image": "http://cdnstatic-2.mydestination.com/library/images/516018_1680_948.jpg",
-    "tags": ["city", "nature", "cold", "wellness", "silence"],
+    "tags": ["nature", "city", "cold", "sport", "wellness", "silence", "hiking"],
     "trivagoId" : 84866
 }]

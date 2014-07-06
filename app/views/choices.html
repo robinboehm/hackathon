@@ -1,6 +1,6 @@
 <div ng-repeat="(name, choice) in choices track by $index" class="choices-container">
 
-  <div class="img-choice-container" ng-class="{ active: $last }">
+  <div class="img-choice-container" ng-class="{ active: $last && selectedChoices.length < 4 }">
     <div ng-repeat="item in choice track by $index"
          class="img-choice"
          ng-class="{active: selectedChoices[$parent.$index] === item}"

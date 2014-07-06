@@ -32,7 +32,7 @@
   },
   {
     "id": "c4bb1e365e3f6967baa77da966008b0b",
-    "key": ["activity", "Sightseeing", ["sightseeing"], ["mountain","beach","party","sport"]],
+    "key": ["activity", "Sightseeing", ["sightseeing"], ["nature","beach","party","sport"]],
     "value": {
       "3-sightseeing.jpg": {
         "content_type": "image/jpeg",
@@ -138,9 +138,9 @@
   },
   {
     "id": "c4bb1e365e3f6967baa77da9660011b6",
-    "key": ["general", "Mountain", ["mountain"], []],
+    "key": ["general", "Nature", ["nature"], []],
     "value": {
-      "1-mountains.jpg": {
+      "1-nature.jpg": {
         "content_type": "image/jpeg",
         "revpos": 2,
         "digest": "md5-s9NvTBR9QY3WeKD6jXEK0Q==",
