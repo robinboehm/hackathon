@@ -20,47 +20,13 @@
 
 		<div class="results" ng-if="selectedChoices.length > 0">
 			<ul>
-				<li class="cityItem">
+				<li class="cityItem" ng-repeat="city in findCities(tags, 10) track by $index">
           <a href="#" class="item">
               <div class="wrap">
-                  <span class="title" >Duesseldorf</span>
-                  <span class="sub-title" >Germany</span>
+                  <span class="title">{{city.name}}</span>
               </div>
           </a>
 	      </li>
-				<li class="cityItem">
-          <a href="#" class="item">
-              <div class="wrap">
-                  <span class="title" >Duesseldorf</span>
-                  <span class="sub-title" >Germany</span>
-              </div>
-          </a>
-	      </li>
-				<li class="cityItem active">
-          <a href="#" class="item">
-              <div class="wrap">
-                  <span class="title" >Duesseldorf</span>
-                  <span class="sub-title" >Germany</span>
-              </div>
-          </a>
-	      </li>
-				<li class="cityItem">
-          <a href="#" class="item">
-              <div class="wrap">
-                  <span class="title" >Duesseldorf</span>
-                  <span class="sub-title" >Germany</span>
-              </div>
-          </a>
-	      </li>
-				<li class="cityItem">
-          <a href="#" class="item">
-              <div class="wrap">
-                  <span class="title" >Duesseldorf</span>
-                  <span class="sub-title" >Germany</span>
-              </div>
-          </a>
-	      </li>
-
 	    </ul>
 		</div>
 
