@@ -45,7 +45,63 @@ describe('A choicesService', function () {
   });
 
 
-  // TODO: May inject via fixtures file
+  describe('Transitions', function () {
+    beforeEach(function(){
+      $httpBackend.flush();
+    });
+
+    describe('forward', function () {
+      it('should insert a new choice row', function(){
+        expect(choicesService.choices.length).toBe(1)
+
+        choicesService.choose(undefined,1);
+
+        expect(choicesService.choices.length).toBe(2)
+
+      });
+    });
+
+    describe('backward', function () {
+      it('should allow to go one step backward', function(){
+        expect(choicesService.choices.length).toBe(1)
+
+        choicesService.choose(undefined,1);
+
+        expect(choicesService.choices.length).toBe(2);
+
+        choicesService.choose(undefined,2);
+
+        expect(choicesService.choices.length).toBe(3);
+
+        choicesService.choose(undefined,1);
+
+        expect(choicesService.choices.length).toBe(2);
+
+      });
+    });
+
+    it('should allow to change last choice', function(){
+      expect(choicesService.choices.length).toBe(1)
+
+      choicesService.choose(undefined,1);
+
+      expect(choicesService.choices.length).toBe(2);
+
+      choicesService.choose(undefined,2);
+
+      expect(choicesService.choices.length).toBe(3);
+
+      // value = 2, step = 2
+      choicesService.choose(undefined,2);
+
+      expect(choicesService.choices.length).toBe(3);
+
+    });
+  });
+
+
+
+// TODO: May inject via fixtures file
   var mockData = [
     {
       "id": "c4bb1e365e3f6967baa77da966007ed2",
