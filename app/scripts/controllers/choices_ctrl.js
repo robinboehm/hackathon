@@ -10,7 +10,7 @@ angular.module('trivagoApp')
       if (step === 0) { return; }
       var scrollPos = $(".startpage").height()+((step)*350)-$(window).height();
       $("html, body").animate({scrollTop:scrollPos}, '300');
-    })
+    });
 
   });
 

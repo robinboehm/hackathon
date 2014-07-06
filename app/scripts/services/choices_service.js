@@ -4,6 +4,7 @@ angular.module('trivagoApp')
     var choices = [];
     var possibleChoices = {};
     var selectedChoices = [];
+    var tags = [];
 
     var stepOrder = [
       'general',
@@ -32,10 +33,13 @@ angular.module('trivagoApp')
       choices.length = 0;
       console.log(step);
       
-      var tags = selectedChoices.map(function(choice) {
+      var tempTags = selectedChoices.map(function(choice) {
         return choice.key[2];
       });
-      tags = tags.concat.apply([], tags);
+      tempTags = tempTags.concat.apply([], tempTags);
+      
+      tags.length = 0;
+      tags.push.apply(tags, tempTags);
 
       for (var i = 0; i <= step; i++) {
         if(stepOrder.length <= i) {
@@ -61,7 +65,8 @@ angular.module('trivagoApp')
             console.log(filteredChoices);
             choices.push(filteredChoices);
           } else {
-            // goToStep(step+1);
+            // load city
+            // console.log('load city')
           }
         }
       }
@@ -82,6 +87,7 @@ angular.module('trivagoApp')
     return {
       choices: choices,
       selectedChoices: selectedChoices,
+      tags: tags,
       choose: function (value, parentIndex) {
         return choose(value, parentIndex);
       }
