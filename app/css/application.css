@@ -307,7 +307,10 @@ iframe {
       border-right: none; }
     .img-choice-container .img-choice img {
       -webkit-filter: grayscale(80%);
-      opacity: 0.8; }
+      opacity: 0.8;
+      height: auto;
+      min-height: 300px;
+      min-width: 450px; }
     .img-choice-container .img-choice.active {
       opacity: 1; }
       .img-choice-container .img-choice.active img {

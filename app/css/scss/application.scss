@@ -128,7 +128,11 @@ $choice-circle-radius: 30px;
     opacity:0.6;
     &:first-child { border-left: none; }
     &:last-child  { border-right: none; }
-		img { -webkit-filter: #{'grayscale(80%)'}; opacity: 0.8;}
+		img { -webkit-filter: #{'grayscale(80%)'}; opacity: 0.8;
+		height: auto;
+		min-height: 300px;
+		min-width: 450px;
+		}
     &.active {
 	    opacity:1;
 
