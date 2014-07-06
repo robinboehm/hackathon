@@ -293,6 +293,8 @@ iframe {
       border-left: none; }
     .img-choice-container .img-choice:last-child {
       border-right: none; }
+    .img-choice-container .img-choice.active {
+      border: 4px solid #ff0000; }
     .img-choice-container .img-choice figure {
       overflow: hidden;
       height: 300px;
